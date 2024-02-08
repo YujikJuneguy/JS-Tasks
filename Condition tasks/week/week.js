@@ -17,3 +17,6 @@
  else {
     document.write(day id undefined)
  }
+ else {
+    document.write(day id undefined)
+ }
