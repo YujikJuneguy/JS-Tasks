@@ -1,3 +1,14 @@
+// Task-01
+// function active (name) {
+//      console.log(${name} is active now);
+// }
+
+// active('Johny')
+// active('filankes')
+// active('kimse')
+
+// __________________________________________________________________________________________________________
+
 // Task-02
 // function eded (eded1, eded2, eded3) {
 //     let enBoyuk = eded1
