@@ -144,14 +144,45 @@
 // ____________________________________________________________________________________________________________________
 
 
-function PropertyTaker( _obj, _propertyname ) {
-    this.continent =_obj;
-    this.contry = _propertyname
+// function PropertyTaker( _obj, _propertyname ) {
+//     this.continent =_obj;
+//     this.contry = _propertyname
+// }
+
+// const Baku = new PropertyTaker('Eurasia', 'Azerbaijan');
+// const Moscow = new PropertyTaker('Europe', 'Russia');
+
+
+// console.log(Baku);
+// console.log(Moscow);
+
+const human1 = {
+    ad:'Eldar',
+    yas:21,
 }
+for (let key in human1) {
+    console.log(key + ":" + human1[key]);
+}
+// _________________________________________________________________________________________________________________
+        //    Task -6
+// Stack:
 
-const Baku = new PropertyTaker('Eurasia', 'Azerbaijan');
-const Moscow = new PropertyTaker('Europe', 'Russia');
+// Stack, proqramın daxilində funksiyaların, dəyişənlərin və digər məlumatların qeyd edildiyi bir verilən strukturudur.
+// Funksiyalar çağrıldıqda, məlumatlar stack-dən istifadə olunur.
+// Stack, "last in, first out" (LIFO) prinsipi ilə işləyir. Yəni, ən son daxil edilən məlumat ən birinci olaraq çıxarılır.
+// Funksiyaların daxilində dəyişənlər və lokal məlumatlar da stack-də saxlanılır.
+// Heap :
 
+// Heap, proqramın daxilində dinamik olaraq yaradılan məlumatların saxlandığı böyük bir məmorya hissəsidir.
+// Heap, məlumatların istifadəsi və işlənməsi üçün ayrılan yerdir.
+// Daxili qeyri-statik obyektlər və məlumatlar (məsələn, obyekt və massivlər) heap-də yerləşir.
+// Heap, proqram tərəfindən ayrılır və yığım hər hansı bir sıra ilə işləmir. Obyektlər və məlumatlar, lazımi olaraq alınaraq və azaldılanda heap-də dəyişir.
 
-console.log(Baku);
-console.log(Moscow);
+// _____________________________________________________________________________________
+
+// Taks -7
+// 7. existsAndTruthy() adinda funksiya yaradin. 2 ədəd argument alır: obyekt(obj) ve string (propertyName). Eger hemin obyektden o adda property varsa ve truthy-dirse, true qaytarsin eks halda false qaytarsin. Mes:
+// existsAndTruthy({a:1,b:2,c:3},'b') // true
+
+// existsAndTruthy({x:'a',y:null,z:'c'},'y') // false (obyektde 'y' var amma falsy-di ona gore false)
+// existsAndTruthy({x:'a',b:'b',z:undefined},'z') // false (obyektde 'z' yoxdu ona gore false)
