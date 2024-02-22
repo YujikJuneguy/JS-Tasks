@@ -36,6 +36,7 @@
 // let yearsLeft = user.getYearsBeforeRetirement();
 // console.log("Pensiyaya qədər qalan illərin sayi: " + yearsLeft);
 
+// __________________________________________________________________________________________________________
 // Task-04
 // Kalkulyator obyekti yaradın.
 // Əsas riyazi hesablamaları yerinə yetirən və nəticəni yaddaşda saxlaya bilən kalkulyator obyekti yaradın.
@@ -49,3 +50,108 @@
 //     equals: '='
 // }
 
+
+
+// ObJECT PART 2
+
+// task-1
+// Car constructor fonksiyonunu tanımla
+
+// function Car  ($brand, $model, $year, _engine ) {
+//     this.brand = $brand;
+//     this.model = $model;
+//     this.year = $year;
+//     this.engine = _engine;
+// }
+
+// const Honda = new Car ('honda', 'civic','2012','1800')
+// const Chevy = new Car ('Cevrolet', 'Malibu','2016','2000')
+// console.log(Honda);
+// console.log(Chevy);
+// ____________________________________________________________________________________________________________
+// // task - 2
+// const User1 = {
+//     id: 1,
+//     name: "Leanne Graham",
+//     username: "Bret",
+//     email: "Sincere@april.biz",
+//     address: {
+//         street: "Kulas Light",
+//         suite: "Apt. 556",
+//         city: "Gwenborough",
+//         zipcode: "92998-3874",
+//     }
+//     }
+//     const User2 = User1
+//     User2.username = "Pitt"
+
+
+// console.log("User1:", User1);
+// console.log("User2:", User2);
+// ________________________________________________________________________________________________________
+    //  task - 3
+// const User1 = {
+//     id: 1,
+//     name: "Leanne Graham",
+//     username: "Bret",
+//     email: "Sincere@april.biz",
+//     address: {
+//         street: "Kulas Light",
+//         suite: "Apt. 556",
+//         city: "Gwenborough",
+//         zipcode: "92998-3874",
+//     }
+//     }
+//     const User2 = Object.assign({},User1)
+
+//     console.log("User1:", User1);
+//     console.log("User2:", User2);
+// ____________________________________________________________________________________________________________
+
+// task -4
+
+
+// Spread Operator (...):
+// Spread operatoru, bir sıra dəyərləri ayrı ayrı elementlərə bölərək obyekt və ya digər strukturları əhatə edir.
+// Əsasən funksiyalara argumentlərin ötürülməsində, və ya obyekt yaratmada,  birləşdirilməsində istifadə olunur.
+// Spread operatoru array və ya obyekti tek tek elementlərə ayırmağa imkan verir.
+ 
+// Misal _________________________________:
+
+// const numbers = [1, 2, 3];
+// console.log(...numbers); 
+
+
+// const numbers1 = [1, 2, 3];
+// const numbers2 = [4, 5, 6];
+// const mergedNumbers = [...numbers1, ...numbers2];
+// console.log(mergedNumbers); 
+
+
+// Rest Operator (...)
+// Rest operatoru funksiyaların parametrlərində istifadə olunur və qalan argumentləri bir yerdə yığır.
+// Funksiyaların parametrlərinin sonunda istifadə olunur və qalan dəyərləri bir yerdə toplayır.
+// Rest operatoru funksiyaların müxtəlif  parametrlərlə işləməsinə imkan verir.
+
+// MIsal   ___________________________________:
+
+// function sum(...numbers) {
+//     return numbers.reduce((total, num) => total + num, 0);
+// }
+
+// console.log(sum(1, 2, 3)); 
+// console.log(sum(1, 2, 3, 4, 5)); 
+// ____________________________________________________________________________________________________________________
+
+
+function PropertyTaker( _obj, _propertyname ) {
+    this.continent =_obj;
+    this.contry = _propertyname
+}
+
+const Baku = new PropertyTaker('Eurasia', 'Azerbaijan');
+const Moscow = new PropertyTaker('Europe', 'Russia');
+
+
+console.log(Baku);
+console.log(Moscow);

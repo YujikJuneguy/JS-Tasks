@@ -198,7 +198,3 @@ function IsInteger(number) {
 // ________________________________________________________________________________________________________
 // Task-19
 // 3 rəqəmli ədəd qəbul edən və onun rəqəmlərinin cəmini qaytaran funksiya yazın.Məsələn daxil edilib 547,cavab olmalıdı 5+4+7 yəqni 16
-function cem() {
-    let number =+prompt('reqemleri daxil edin');
-    number = 
-}
