@@ -156,13 +156,7 @@
 // console.log(Baku);
 // console.log(Moscow);
 
-const human1 = {
-    ad:'Eldar',
-    yas:21,
-}
-for (let key in human1) {
-    console.log(key + ":" + human1[key]);
-}
+
 // _________________________________________________________________________________________________________________
         //    Task -6
 // Stack:
