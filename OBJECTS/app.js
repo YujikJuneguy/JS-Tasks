@@ -52,7 +52,7 @@
 
 
 
-// ObJECT PART 2
+                                                               // ObJECT PART 2
 
 // task-1
 // Car constructor fonksiyonunu tanımla
@@ -143,18 +143,30 @@
 // console.log(sum(1, 2, 3, 4, 5)); 
 // ____________________________________________________________________________________________________________________
 
+                                                               // Task -5
 
-// function PropertyTaker( _obj, _propertyname ) {
-//     this.continent =_obj;
-//     this.contry = _propertyname
+// const propertyTaker = (obj,str) => obj[str]
+// const odlarYurdu = {
+//     country:'Azerbaijan',
+//     continent: 'Eurasia'
+// }
+// const Urusiyyet = {
+//     country:'Russia',
+//     continent: 'Europe'
+// }
+// console.log(propertyTaker({ continent: 'Eurasia', country: 'Azerbaijan'},'continent'));  
+// // bele cixir ki burada hec 151-ci setirdeki deyishene ehtiyac yoxdur?
+// console.log(propertyTaker(Urusiyyet,'country'));
+                            //  bu ise h'min kodla.dirmanin ikinci usuludur.... aci]i bilmiremhansi daha m'qs'd' uygundur)))
+// function propertyTaker(obj, propertyName) {
+//     console.log(obj[propertyName]);
 // }
 
-// const Baku = new PropertyTaker('Eurasia', 'Azerbaijan');
-// const Moscow = new PropertyTaker('Europe', 'Russia');
 
+// propertyTaker({ continent: 'Asia', country: 'Japan'}, 'continent');
+// propertyTaker({ country: 'Sweden', continent: 'Europe'}, 'country'); 
+// propertyTaker({ad:'Elchin', age:12}, 'age'); 
 
-// console.log(Baku);
-// console.log(Moscow);
 
 
 // _________________________________________________________________________________________________________________
@@ -180,3 +192,12 @@
 
 // existsAndTruthy({x:'a',y:null,z:'c'},'y') // false (obyektde 'y' var amma falsy-di ona gore false)
 // existsAndTruthy({x:'a',b:'b',z:undefined},'z') // false (obyektde 'z' yoxdu ona gore false)
+
+// function existsAndTruthy(obj, propertyName) {
+//     console.log(Boolean(obj[propertyName]));
+//     return 
+// }
+
+// existsAndTruthy({a:1,b:2,c:3},'b')
+// existsAndTruthy({x:'a',y:null,z:'c'},'y')
+// existsAndTruthy({x:'a',b:'b',z:undefined},'z') 
