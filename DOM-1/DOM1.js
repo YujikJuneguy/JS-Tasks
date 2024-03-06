@@ -48,8 +48,8 @@
 
 const button = document.querySelectorAll(".button");
 const color = document.getElementById('color');
-
 const show = document.getElementById('show')
+
 show.onclick = () => {
   document.body.button.background = color.value;
   color.value = "";
