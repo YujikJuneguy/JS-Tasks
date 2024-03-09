@@ -1,13 +1,13 @@
 // *************************** Task 1 **********************************
 
 // const button = document.getElementById('btn')
-// const digit = document.getElementById('numbInput')
-// const digit2 = document.getElementById('numbInput')
+// const digit = document.getElementById('num1Input')
+// const digit2 = document.getElementById('num2Input')
 // const count = document.getElementById('operatorInput')
 
 // button.onclick = () => {
-//     const x = digit.value;
-//     const y = digit2.value;
+//     const x = +digit.value;
+//     const y = +digit2.value;
 //     const operator = operatorInput.value;
 //     let result;
 //      switch(operator) {
@@ -27,31 +27,34 @@
 //             result = "do something!!!";
 
 // }
-// document.write(result)
+// SUM.innerText += result
 // }
-
-// neticede cavab cixir , amma sehv))))
 
 // ***************************************** Task 2 ********************************************
 
 // const buttons = document.querySelectorAll(".circle")
+// const colorname = document.querySelector(".colorname")
 
 // buttons.forEach(button => {
+//     // const colorname = item.className.split(" ")[1]
 //     button.onclick = () => {
 //          document.body.style.background = button.id
+//          colorname.InnerText = 'color is:' + colorname
 //     }
 // })
 
+/*
+istədim həm rəng dəyişsib , həm rəngin adı yazılsın, nəsə alınmır
+*/ 
+
 // ****************************************** Task 3 ********************************************
-// ekranda 5 eded ag rengde duyme olacaq.Yuxarida ise bir input
-// inputun icerisine reng yazacayiq,hansi buttona click etsek onun arxa fonu inputun icerisindeki rengle evez edilecek.
 
 const button = document.querySelectorAll(".button");
-const color = document.getElementById('color');
-const show = document.getElementById('show')
+const colorInput = document.getElementById('colorİnput');
 
-show.onclick = () => {
-  document.body.button.background = color.value;
-  color.value = "";
-  color.focus();
-};
+
+button.forEach(button => {
+  button.onclick = () => { 
+    button.style.background = colorInput.value
+  }
+})
