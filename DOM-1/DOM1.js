@@ -49,12 +49,13 @@ istədim həm rəng dəyişsib , həm rəngin adı yazılsın, nəsə alınmır
 
 // ****************************************** Task 3 ********************************************
 
-const button = document.querySelectorAll(".button");
-const colorInput = document.getElementById('colorİnput');
+// const button = document.querySelectorAll(".button");
+// const colorInput = document.getElementById('colorİnput');
 
 
-button.forEach(button => {
-  button.onclick = () => { 
-    button.style.background = colorInput.value
-  }
-})
+// button.forEach(button => {
+//   button.onclick = () => { 
+//     button.style.background = colorInput.value
+//   }
+// })
+
