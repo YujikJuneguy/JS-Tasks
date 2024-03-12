@@ -1,35 +1,42 @@
-const newTodoInput = document.getElementById('newTodoInput')
-const addTodoBtn = document.getElementById('addTodoBtn')
+const YeniElaveet = document.getElementById('YeniElaveet')
+const duyme = document.getElementById('duyme')
 const tableBody = document.getElementById("tableBody")
-let uniqueId = 0;
+let nomre = 0;
 
-addTodoBtn.onclick = () => {
-    const newTodo = newTodoInput.value;
+duyme.onclick = () => {
+    const newTodo = YeniElaveet.value;
     console.log(newTodo);
 
     const tr = document.createElement('tr');
-    const tdId = document.createElement('td');
-    const tdTodo = document.createElement('td');
-    const tdActions = document.createElement('td');
-    const isDoneButton = document.createElement('button');
-    const deleteButton = document.createElement('button');
+    const tdMomre = document.createElement('td');
+    const tdMuesse = document.createElement('td');
+    const tdTip = document.createElement('td');
+    const Topdan = document.createElement('button');
+    const Kart = document.createElement('button');
 
-    if (newTodo !== '') {
-        tr.classList.add('undone')
-        tdTodo.innerText = newTodo;
-        tdId.innerText = ++uniqueId;
-        deleteButton.innerText = '🗑️'
-        deleteButton.dataset.id = tdId.innerText;
-        isDoneButton.innerText = '✅'
-        isDoneButton.dataset.done = false
+    tdMomre.innerText =
+    Topdan.İnnerText = 'TOPDAN'
+    Kart.İnnerText = 'KART'
+    tdTip.append(Topdan,Kart)
+    tr.append(tdTip)
+    tableBody.append(tr)
 
-    //     tdActions.append(deleteButton, isDoneButton)
-    //     tr.append(tdId, tdTodo, tdActions)
-    //     tableBody.append(tr)
-    // }else {
-    //     alert('Error')
-    // }
-    // newTodoInput.value = '';
+//     if (newTodo !== '') {
+//         tr.classList.add('undone')
+//         tdTodo.innerText = newTodo;
+//         tdId.innerText = ++uniqueId;
+//         deleteButton.innerText = '🗑️'
+//         deleteButton.dataset.id = tdId.innerText;
+//         isDoneButton.innerText = '✅'
+//         isDoneButton.dataset.done = false
+
+//         tdActions.append(deleteButton, isDoneButton)
+//         tr.append(tdId, tdTodo, tdActions)
+//         tableBody.append(tr)
+//     }else {
+//         alert('Error')
+//     }
+//     newTodoInput.value = '';
 
 
     // deleteButton.onclick = () => {
