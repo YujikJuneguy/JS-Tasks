@@ -5,30 +5,22 @@ let nomre = 0;
 
 duyme.onclick = () => {
     const newTodo = YeniElaveet.value;
-    console.log(newTodo);
-
+   
     const tr = document.createElement('tr');
-    const tdMomre = document.createElement('td');
-    const tdMuesse = document.createElement('td');
+    const tdNomre = document.createElement('td');
+    const tdname = document.createElement('td');
     const tdTip = document.createElement('td');
-    const Topdan = document.createElement('button');
-    const Kart = document.createElement('button');
+    const TopdanBtn = document.createElement('button');
+    const KartBtn = document.createElement('button');
 
-    tdMomre.innerText =
-    Topdan.İnnerText = 'TOPDAN'
-    Kart.İnnerText = 'KART'
-    tdTip.append(Topdan,Kart)
-    tr.append(tdTip)
+    tdNomre.innerText =  ++nomre
+    TopdanBtn.İnnerText = 'TOPDAN'
+    KartBtn.İnnerText = 'KART'
+    tdTip.append(Topdan,Kart) 
+    tr.append(tdNomre.tdTip)
     tableBody.append(tr)
 
-//     if (newTodo !== '') {
-//         tr.classList.add('undone')
-//         tdTodo.innerText = newTodo;
-//         tdId.innerText = ++uniqueId;
-//         deleteButton.innerText = '🗑️'
-//         deleteButton.dataset.id = tdId.innerText;
-//         isDoneButton.innerText = '✅'
-//         isDoneButton.dataset.done = false
+   
 
 //         tdActions.append(deleteButton, isDoneButton)
 //         tr.append(tdId, tdTodo, tdActions)
@@ -66,3 +58,4 @@ duyme.onclick = () => {
     <input type="checkbox">
 </td>
 </tr> */}
+
