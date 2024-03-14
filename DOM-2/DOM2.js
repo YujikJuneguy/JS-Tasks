@@ -1,61 +1,65 @@
-const YeniElaveet = document.getElementById('YeniElaveet')
+const Yeni = document.getElementById('Yeni')
 const duyme = document.getElementById('duyme')
 const tableBody = document.getElementById("tableBody")
-let nomre = 0;
+let uniqueId = 0;
 
 duyme.onclick = () => {
-    const newTodo = YeniElaveet.value;
+    const newTodo = Yeni.value;
+    Yeni.value ='';
    
     const tr = document.createElement('tr');
-    const tdNomre = document.createElement('td');
-    const tdname = document.createElement('td');
-    const tdTip = document.createElement('td');
-    const TopdanBtn = document.createElement('button');
-    const KartBtn = document.createElement('button');
+    const tdId = document.createElement('td');
+    const tdMuqavile = document.createElement('td');
+    const tdTip = document.createElement('input');
+    const tdStatus = document.createElement('td');
+    const Xeyrduyme =document.createElement ('button')
+    const Beliduyme =document.createElement ('button')
 
-    tdNomre.innerText =  ++nomre
-    TopdanBtn.İnnerText = 'TOPDAN'
-    KartBtn.İnnerText = 'KART'
-    tdTip.append(Topdan,Kart) 
-    tr.append(tdNomre.tdTip)
-    tableBody.append(tr)
-
-   
-
-//         tdActions.append(deleteButton, isDoneButton)
-//         tr.append(tdId, tdTodo, tdActions)
-//         tableBody.append(tr)
-//     }else {
-//         alert('Error')
-//     }
-//     newTodoInput.value = '';
-
-
-    // deleteButton.onclick = () => {
-    //     deleteButton.parentNode.parentNode.remove();
-    // }
-
-    // isDoneButton.onclick = () => {
-    //     if (isDoneButton.dataset.done === 'false') {
-    //         isDoneButton.dataset.done === 'true'
-    //         isDoneButton.parentNode.parentNode.classList.add('done')
-    //         isDoneButton.remove();
-    //     }
-    // }
-    //deleteTodo
+     if (newTodo !== '') {
+        tr.classList.add ('gozle')
+        tdId.innerText = newTodo; 
+        tdMuqavile.innerText = newTodo;
+        tdTip.innerText = ''
+        tdId.innerText = ++uniqueId;
+        Beliduyme.innerText = 'BELI'
+        Xeyrduyme.innerText = 'XEYR'
+        tdTip.setAttribute('type','input')
+        tdStatus.append(Xeyrduyme,Beliduyme,tdTip)
+        tr.append(tdId,tdMuqavile,tdTip,tdStatus)
+        tableBody.append(tr)
+    
+        Beliduyme.onclick = () => {
+            Xeyrduyme.remove();
+        }
+        Xeyrduyme.onclick = () => {
+            Beliduyme.remove();
+        }
+     }
+     else {
+        alert('mwqavile elave et')
+     }
 
 }
 
 
+let mode = 'light'
+let button = 'Dark Mode'
+const modeChanger = document.getElementById ('modeChanger')
+document.body.className = mode
+modeChanger.innerText = button;
 
+modeChanger.addEventListener('click',() => {
+    if (mode === 'dark') {
+        mode = 'light'
+        button = 'Dark mode'
+    }
+    else {
+        mode = 'dark'
+        button = 'Light mode'
+    }
+    document.body.className = mode
+    modeChanger.innerText = button;
+  
 
-{/* <tr class="undone">
-<td>1</td>
-<td>Ev tapsiriqlarini isle</td>
-<td>False</td>
-<td>
-    <button>🗑️</button>
-    <input type="checkbox">
-</td>
-</tr> */}
+})
 
