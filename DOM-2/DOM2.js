@@ -6,6 +6,7 @@ let uniqueId = 0;
 duyme.onclick = () => {
     const newTodo = Yeni.value;
     Yeni.value ='';
+    Yeni.focus();    
    
     const tr = document.createElement('tr');
     const tdId = document.createElement('td');
