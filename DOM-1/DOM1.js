@@ -32,16 +32,16 @@
 
 // ***************************************** Task 2 ********************************************
 
-// const buttons = document.querySelectorAll(".circle")
-// const colorname = document.querySelector(".colorname")
+const buttons = document.querySelectorAll(".circle")
+const colorname = document.querySelector(".colorname")
 
-// buttons.forEach(button => {
-//     // const colorname = item.className.split(" ")[1]
-//     button.onclick = () => {
-//          document.body.style.background = button.id
-//          colorname.InnerText = 'color is:' + colorname
-//     }
-// })
+buttons.forEach(button => {
+    const colorname = item.className.split(" ")[1]
+    button.onclick = () => {
+         document.body.style.background = button.id
+         colorname.InnerText = 'color is:' + colorname
+    }
+})
 
 /*
 istədim həm rəng dəyişsib , həm rəngin adı yazılsın, nəsə alınmır
