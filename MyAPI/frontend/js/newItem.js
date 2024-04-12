@@ -1,5 +1,6 @@
 const url = 'http://localhost:3000/products';
 
+const productContainer =document.querySelector('.products');
 const NewItemForm =document.getElementById('NewItemForm');
 const brandInput =document.getElementById('brand')
 const priceInput =document.getElementById('price')
@@ -14,10 +15,11 @@ NewItemForm.addEventListener('submit',(e) => {
         brand,
         price,
         image,
+        status: 'In Stock'
     };
 
 
-    if (bran && price && image) {
+    if (brand && price && image) {
         axios.post(url,newItem).then((res) => {
             if (res.statusText === 'Created') {
                
