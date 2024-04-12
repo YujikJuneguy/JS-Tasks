@@ -31,3 +31,22 @@
     box-shadow: inset;
     border-radius: 6px;
     }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    background-color: aquamarine;
+    padding: 10px 20px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+nav div:last-child a {
+    margin-left: 40px;
+}

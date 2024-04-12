@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>  
+<body>
     <header>
         <nav>
             <div>
@@ -17,15 +17,19 @@
             </div>
             <div>
                 <a href="newItem.html">Add your Item</a>
-                <a href="newItem.html">Favourites</a>
+                <a href="">Favourites</a>
 
             </div>
         </nav>
     </header>
-      <hr>
+    <h2 class="text-center">New Item</h2>
+    <form id="NewItemForm" class="text-center">
+      <input class="form-control w-50 my-3 mx-auto" type="text" placeholder="brand"id = "brand">
+      <input class="form-control w-50 my-3 mx-auto" type="text" placeholder="price"id = "price">
+      <input class="form-control w-50 my-3 mx-auto" type="text" placeholder="image"id = "image">
+      <input type="submit" value = "Add" class="btn btn-succes w-50 form-control">
+  </form>
 
-    <div class="products"></div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

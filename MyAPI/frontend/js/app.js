@@ -3,30 +3,45 @@ const url = 'http://localhost:3000/products';
 
 const productContainer = document.querySelector('.products')
 const writeData = (data) => {
-    data.forEach(({brand,price,status,image}) => {
+    data.forEach(({id,brand,price,status,image}) => {
         productContainer.innerHTML += `<div class="guitars">
         <img src="${image}" alt="">
         <h2>${brand}</h2>
         <p>${price}</p>
         <p>${status}</p>
         <button class="btn">Add to Favorites</button>
-        <button class="btn btn-danger" onclick="deleteGood()"> Sold <button>
+        <button class="btn btn-danger" onclick="deleteGood('${id}')"> Sold <button>
     </div>`;
     });
 };
 
-const deleteGood = () => {
+// deleteItem
+
+const deleteGood = (id) => {
     Swal.fire({
-        position: "top-end",
-        icon: "success",
         title: "This Babe has been SOLD",
-        showConfirmButton: false,
-        timer: 1500
-      });
-}
-
- 
-
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
+      }).then((result) => {
+        axios.delete(`${url}/${id}`)
+      }).finally(() => { 
+          location.reload();
+      })     
+        } 
+      
+    // getItem
 // *************************************AXIOS AWAIT Keyword
 const getAwaitAxios = async() => {
     const {data} = await axios (url)
@@ -34,6 +49,7 @@ const getAwaitAxios = async() => {
 };
 
 getAwaitAxios()
+
 
 // *************************************AXIOS THEN Keyword
 
