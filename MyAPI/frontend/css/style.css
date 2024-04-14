@@ -4,9 +4,8 @@
     box-sizing: border-box;
     
 }
-
 .navhead {
-    background-color: orangered;
+    background-color: rgb(22, 20, 20);
 }
 nav {
     display: flex;
@@ -15,14 +14,14 @@ nav {
     padding-inline: 20px;
     padding: 15px 25px;
     font-size: larger;
-    
 }
 nav a {
-    color: black;
+    color: orangered;
     text-decoration: none;
     font-size: larger;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+
 nav div:last-child a {
     margin-left: 40px;
 }
@@ -33,15 +32,42 @@ nav .Logo:hover {
     padding: 6px;
     border-radius: 10px;
 }
-nav .new:hover {
+nav .register:hover {
     background-color: black;
     color: orangered;
     border: 1px solid orangered;
     padding: 6px;
     border-radius: 10px;
 }
+nav .login:hover {
+    background-color: black;
+    color: orangered;
+    border: 1px solid orangered;
+    padding: 6px;
+    border-radius: 10px;
+}
+.nav-bar {
+    
+    background-color: rgb(44, 43, 43);
+    padding: 0px 10px;
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: medium;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding-right: 30px;
+}
+.nav-bar a:hover {
+    color: orangered;
+}
 
-/* products style */
+/* _______________________________________products style ___________________________________________*/
 .products {
     display: grid;
     grid-template-columns: repeat(4,1fr);
