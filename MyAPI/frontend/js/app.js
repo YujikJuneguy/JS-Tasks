@@ -6,11 +6,12 @@ const writeData = (data) => {
     data.forEach(({id,brand,price,status,image}) => {
         productContainer.innerHTML += `<div class="guitars">
         <img src="${image}" alt="">
-        <h2>${brand}</h2>
+        <h4>${brand}</h4>
         <p>${price}</p>
         <p>${status}</p>
-        <button class="btn">Add to Favorites</button>
-        <button class="btn btn-danger" onclick="deleteGood('${id}')"> Sold <button>
+        <button class="btn btn-success">Add to Favorites</button>
+        <button class="btn" onclick=deleteGood('${id}')> Sold <button>
+        <button class="btn btn-warning" onclick=editGood('${id}')>Edit</button>
     </div>`;
     });
 };
@@ -50,6 +51,32 @@ const getAwaitAxios = async() => {
 
 getAwaitAxios()
 
+// Edit
+
+const editGood = async(id) => {
+  const {data:{brand,price,image}}  = await axios(`${url}/${id}`);
+  const _brand = prompt('Type the tytle of the brand',brand)
+  const _price = prompt('Type the cost', price)
+  const _image = prompt('change the image',image)
+
+  const object = {
+    brand:_brand,
+    price:_price,
+    image:_image
+  }
+  
+  axios.put(`${url}/${id}`,object).then((response) => {
+    if (response.statusText === 'OK') {
+      location.reload();
+    }
+  })
+};
+
+
+
+
+
+
 
 // *************************************AXIOS THEN Keyword
 
@@ -74,3 +101,9 @@ getAwaitAxios()
 //     })
 // }
 // Fetch()
+
+
+// **********************************************************************
+
+// Ваш JavaScript остается тем же
+
