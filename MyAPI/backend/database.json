@@ -31,5 +31,15 @@
       "image": ""
     }
   ],
-  "users": []
+  "users": [
+    {
+      "id": "0",
+      "Name":"Elchin",
+      "Surname":"Hasanov",
+      "email address":"elcin@gmail.com",
+      "Username":"Juneguy",
+      "password":"1789",
+    "my favorites":[]
+    }
+  ]
 }
