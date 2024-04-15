@@ -1,12 +1,10 @@
 {
   "products": [
     {
-      "id": "111",
-      "brand": "Ibanez AEWC400 6-String Acoustic-Electric Guitar (Right-Handed, Transparent Black Sunburst)",
-      "Rating": "4.5",
-      "price": "599.99$",
-      "status": "in Stock",
-      "image": "https://m.media-amazon.com/images/I/61zvSMUmxeL._AC_SL1200_.jpg"
+      "brand": null,
+      "price": null,
+      "image": null,
+      "id": "111"
     },
     {
       "id": "113",
@@ -34,12 +32,12 @@
   "users": [
     {
       "id": "0",
-      "Name":"Elchin",
-      "Surname":"Hasanov",
-      "email address":"elcin@gmail.com",
-      "Username":"Juneguy",
-      "password":"1789",
-    "my favorites":[]
+      "Name": "Elchin",
+      "Surname": "Hasanov",
+      "email address": "elcin@gmail.com",
+      "Username": "Juneguy",
+      "password": "1789",
+      "my favorites": []
     }
   ]
 }

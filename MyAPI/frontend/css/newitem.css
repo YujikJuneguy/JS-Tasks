@@ -26,8 +26,6 @@ label {
     font-weight: 500;
     margin: 10px 0 3px;
 }
-p{
+.confirm p{
    margin-top: 20px;
-   display: block;
-   width: 300px;
 }
