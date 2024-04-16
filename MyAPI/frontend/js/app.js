@@ -1,7 +1,21 @@
-const url = 'http://localhost:3000/products';
-
-
+const url = 'http://localhost:3000/products/';
 const productContainer = document.querySelector('.products')
+const register = document.querySelector('register')
+const login = document.querySelector('login')
+const navmenu =document.getElementById('navmenu')
+
+const user ="";
+if (user) {
+  navmenu.innerHTML = `<a class="new" href="newItem.html">Add your Item</a>
+                        <a class="fav" href="">Favorites</a>
+                        <a class="logout" href="./index.html">Log out</a>`  
+}else{
+  navmenu.innerHTML = `<a class="register" href="./register.html">Sign Up</a>
+                        <a class="login" href="./login.html">Log in</a>`
+}
+
+    // getItem
+// *************************************AXIOS AWAIT Keyword
 const writeData = (data) => {
     data.forEach(({id,brand,price,status,image}) => {
         productContainer.innerHTML += `<div class="guitars">
@@ -10,11 +24,17 @@ const writeData = (data) => {
         <p>${price}</p>
         <p>${status}</p>
         <button class="btn btn-success">Add to Favorites</button>
-        <button class="btn" onclick=deleteGood('${id}')> Sold <button>
-        <button class="btn btn-warning" onclick=editGood('${id}')>Edit</button>
+        <button class="btn btn-danger" onclick=deleteGood('${id}')>Sold /button>
+        <button class="btn btn-warning" onclick=editGood('${id}')> dit</button>
     </div>`;
     });
 };
+
+const getAwaitAxios = async() => {
+  const {data} = await axios (url)
+  writeData(data);
+};
+getAwaitAxios()
 
 // deleteItem
 
@@ -42,14 +62,7 @@ const deleteGood = (id) => {
       })     
         } 
       
-    // getItem
-// *************************************AXIOS AWAIT Keyword
-const getAwaitAxios = async() => {
-    const {data} = await axios (url)
-    writeData(data);
-};
 
-getAwaitAxios()
 
 // Edit
 
@@ -71,6 +84,8 @@ const editGood = async(id) => {
     }
   })
 };
+
+
 
 
 
