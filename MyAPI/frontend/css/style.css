@@ -25,21 +25,8 @@ nav a {
 nav div:last-child a {
     margin-left: 40px;
 }
-nav .Logo:hover {
-    background-color: black;
-    color: orangered;
-    border: 1px solid orangered;
-    padding: 6px;
-    border-radius: 10px;
-}
-nav .register:hover {
-    background-color: black;
-    color: orangered;
-    border: 1px solid orangered;
-    padding: 6px;
-    border-radius: 10px;
-}
-nav .login:hover {
+
+.container a:hover {
     background-color: black;
     color: orangered;
     border: 1px solid orangered;
@@ -47,8 +34,7 @@ nav .login:hover {
     border-radius: 10px;
 }
 /* -----------------------------==categories------------------------------ */
-.nav-bar {
-    
+.nav-bar {    
     background-color: rgb(44, 43, 43);
     padding: 0px 10px;
     margin: 0px auto;
@@ -102,7 +88,7 @@ nav .login:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .btn {
-    background-color: rgb(10, 142, 10);
+    /* background-color: rgb(10, 142, 10); */
     color: white;
     padding: 3%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
