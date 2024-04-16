@@ -6,7 +6,7 @@ const writeData = (data) => {
     data.forEach(({id,brand,price,status,image}) => {
         productContainer.innerHTML += `<div class="guitars">
         <img src="${image}" alt="">
-        <h4>${brand}</h4>
+        <h4>${brand}</h4> 
         <p>${price}</p>
         <p>${status}</p>
         <button class="btn btn-success">Add to Favorites</button>
@@ -71,6 +71,33 @@ const editGood = async(id) => {
     }
   })
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

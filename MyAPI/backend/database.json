@@ -32,12 +32,39 @@
   "users": [
     {
       "id": "0",
-      "Name": "Elchin",
-      "Surname": "Hasanov",
-      "email address": "elcin@gmail.com",
-      "Username": "Juneguy",
-      "password": "1789",
-      "my favorites": []
+      "username": "Juneguy",
+      "password": "1234",
+      "favorites": [],
+      "myitems": []
+    },
+    {
+      "id": "26dd",
+      "username": "ghjgjhgj",
+      "password": "123456"
+    },
+    {
+      "id": "e55c",
+      "username": "",
+      "password": "",
+      "myitems": []
+    },
+    {
+      "id": "53ce",
+      "username": "bfdgb",
+      "password": "15151515",
+      "myitems": []
+    },
+    {
+      "id": "8bd8",
+      "username": "jgfgfh",
+      "password": "12121",
+      "myitems": []
+    },
+    {
+      "id": "9d46",
+      "username": "gfbhdf",
+      "password": "21354",
+      "myitems": []
     }
   ]
 }

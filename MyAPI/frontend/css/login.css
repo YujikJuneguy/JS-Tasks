@@ -25,30 +25,17 @@ nav a {
 nav div:last-child a {
     margin-left: 40px;
 }
-nav .Logo:hover {
+
+.container a:hover {
     background-color: black;
     color: orangered;
     border: 1px solid orangered;
     padding: 6px;
     border-radius: 10px;
 }
-nav .new:hover {
-    background-color: black;
-    color: orangered;
-    border: 1px solid orangered;
-    padding: 6px;
-    border-radius: 10px;
-}
-nav .fav:hover {
-    background-color: black;
-    color: orangered;
-    border: 1px solid orangered;
-    padding: 6px;
-    border-radius: 10px;
-}
+
 .nav-bar {
-    
-    background-color: rgb(44, 43, 43);
+     background-color: rgb(44, 43, 43);
     padding: 0px 10px;
     margin: 0px auto;
     width: 100%;
