@@ -1,18 +1,5 @@
 const url = 'http://localhost:3000/products/';
 const productContainer = document.querySelector('.products')
-const register = document.querySelector('register')
-const login = document.querySelector('login')
-const navmenu =document.getElementById('navmenu')
-
-const user ="";
-if (user) {
-  navmenu.innerHTML = `<a class="new" href="newItem.html">Add your Item</a>
-                        <a class="fav" href="">Favorites</a>
-                        <a class="logout" href="./index.html">Log out</a>`  
-}else{
-  navmenu.innerHTML = `<a class="register" href="./register.html">Sign Up</a>
-                        <a class="login" href="./login.html">Log in</a>`
-}
 
     // getItem
 // *************************************AXIOS AWAIT Keyword
@@ -36,8 +23,9 @@ const getAwaitAxios = async() => {
 };
 getAwaitAxios()
 
-// deleteItem
 
+
+// deleteItem
 const deleteGood = (id) => {
     Swal.fire({
         title: "This Babe has been SOLD",
@@ -65,7 +53,6 @@ const deleteGood = (id) => {
 
 
 // Edit
-
 const editGood = async(id) => {
   const {data:{brand,price,image}}  = await axios(`${url}/${id}`);
   const _brand = prompt('Type the tytle of the brand',brand)
@@ -84,40 +71,6 @@ const editGood = async(id) => {
     }
   })
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // *************************************AXIOS THEN Keyword
